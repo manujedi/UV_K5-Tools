@@ -16,6 +16,6 @@ The screen buffer format is (where [x][y] are the coordinates on the screen):
 
 copies the frame buffer using openocd and displays it using pygame. Reaches about 10fps, so more than enough
 Saves every frame to an image, so it can be converted to a video
-
+Thanks to [@fagci](https://github.com/fagci) for the spectrum mod
 ![screenmirror_demo.mp4](media/screenrecording.gif)
 ![screenmirror_demo.mp4](media/screenmirror_demo.gif)
