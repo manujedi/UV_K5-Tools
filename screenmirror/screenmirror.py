@@ -55,7 +55,7 @@ while running:
     surf = pygame.transform.scale(surf, [128 * 4, 56 * 4])
 
     # convert to video
-    # "ffmpeg -framerate 2 -pattern_type glob -i '*.png' -map 0:v -c:v libx265 -crf 5 out.mp4"
+    # "fffmpeg -framerate 10 -pattern_type glob -i '*.png' -pix_fmt yuv420p out.mp4"
     # to be telegram compatible
     # adjust framerate
     pygame.image.save(surf, "frames/image" + str("%05d" % (frame,)) + ".png")
