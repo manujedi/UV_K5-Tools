@@ -15,5 +15,6 @@ The screen buffer format is (where [x][y] are the coordinates on the screen):
 ## Screenmirror
 
 copies the frame buffer using openocd and displays it using pygame. Reaches about 10fps, so more than enough
+Saves every frame to an image, so it can be converted to a video
 
 ![screenmirror_demo.mp4](media/screenmirror_demo.gif)
