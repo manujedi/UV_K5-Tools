@@ -41,7 +41,7 @@ surf = pygame.surfarray.make_surface(Z)
 
 running = True
 clock = pygame.time.Clock()
-fps = 2
+fps = 10
 frame = 0
 
 while running:
@@ -54,7 +54,10 @@ while running:
     surf = pygame.surfarray.make_surface(grayscalebitmap)
     surf = pygame.transform.scale(surf, [128 * 4, 56 * 4])
 
-    # convert to video "ffmpeg -framerate 2 -pattern_type glob -i '*.png' -map 0:v -c:v libx265 -crf 5 out.mp4" (to be telegram compatible)
+    # convert to video
+    # "ffmpeg -framerate 2 -pattern_type glob -i '*.png' -map 0:v -c:v libx265 -crf 5 out.mp4"
+    # to be telegram compatible
+    # adjust framerate
     pygame.image.save(surf, "frames/image" + str("%05d" % (frame,)) + ".png")
     frame += 1
 
