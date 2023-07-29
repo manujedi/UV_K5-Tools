@@ -18,8 +18,8 @@ def patchOrigFW(patch):
     f.close()
 
 def addBootloader():
-    f1 = open("fw.bin", 'rb')
-    f2 = open("bootloader.bin", 'rb')
+    f1 = open("bootloader.bin", 'rb')
+    f2 = open("fw.bin", 'rb')
     fo = open("fw_with_bl.bin", 'wb')
 
     fo.write(f1.read())
