@@ -19,3 +19,14 @@ Saves every frame to an image, so it can be converted to a video
 Thanks to [@fagci](https://github.com/fagci) for the spectrum mod
 ![screenmirror_demo.mp4](media/screenrecording.gif)
 ![screenmirror_demo.mp4](media/screenmirror_demo.gif)
+
+## CustomFW
+
+should be a full FW in the future. Right now it only checks if extracted code compiles
+
+## FwPatcher
+
+compiles, links and patches the original FW with the extracted code. Also it saves symbols ;)
+This means that an extracted function _F_ can be relocated if all functions which call _F_ are extracted as well.
+
+# DO NOT FLASH without manually checking... It currently bricked my bootloader
