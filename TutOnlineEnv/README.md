@@ -1,4 +1,5 @@
 # Tutorial for building Piotr FW online
+- ALL COMMANDS ARE RUN IN THE CODESPACE, nothing modifies you pc, don't run any command on your local pc
 - you need a github account
 - open your codespaces: https://github.com/codespaces
   - click on "New codespace"
