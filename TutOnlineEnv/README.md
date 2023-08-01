@@ -13,3 +13,6 @@
   - `cmake ..`
   - `make`
   - `make rssi_sbar_encoded`
+
+You should have now a full development environment
+![Environment](../media/DevEnv.png)
