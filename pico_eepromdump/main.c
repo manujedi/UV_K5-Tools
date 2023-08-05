@@ -44,19 +44,19 @@ int main() {
     printf("starting write\n");
 
     unsigned char write_data[32 + 2];
-    char result = 1;
 
-    for (unsigned int addr = 0; addr < eeprom_dump_len; addr += 1) {
+    for (unsigned int addr = 0; addr < eeprom_dump_len; addr += 32) {
 
-        if(!(addr & 0xF))
-            printf("writing %05x\n", addr);
+        printf("writing %05x\n", addr);
 
-        write_data[0] = addr >> 8;
-        write_data[1] = addr & 0xFF;
-        write_data[2] = eeprom_dump[addr];
+        write_data[0] = (addr >> 8);
+        write_data[1] = (addr & 0xFF);
+        for (int i = 0; i < 32; ++i) {
+            write_data[2 + i] = eeprom_dump[addr + i];
+        }
 
-        //go back to single byte writes... 32byte does not work, although it should
-        i2c_write_blocking(i2c_default, 0x50, write_data, 3, false);
+        i2c_write_blocking(i2c_default, 0x50, write_data, 2+32, false);
+        sleep_ms(2);
 
     }
 
