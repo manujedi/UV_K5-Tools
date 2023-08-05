@@ -13,6 +13,7 @@ this code dumps the current contents of the eeprom.
 Connect GPIO4 (SDA) and GPIO5 (SCL) with the bl24c64
 As VCC i used the 3.3V from the pico and any GND
 WP is already connected to GND
+DO NOT CONNECT THE BATTERY OR USB POWER
 */
 
 
