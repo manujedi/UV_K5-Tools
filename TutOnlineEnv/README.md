@@ -10,7 +10,8 @@
 ![Environment](../media/DevEnvGccCommand.png)
   - this takes some time (about 1min) 
   - your codespace should stop (if not select the codespace and press enter), click restart
-  ![Environment](../media/DevEnvGccCommand.png)
+  
+  ![Environment](../media/DevEnvRestartCodespace.png)
 - Build the FW (do not use `ninja`, replace `ninja` with `make`. Commands are similar to the ones in the README):
   - `mkdir build`
   - `cd build`
